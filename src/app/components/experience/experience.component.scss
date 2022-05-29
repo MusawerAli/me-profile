@@ -1,0 +1,47 @@
+$mainColor:#17ca94;
+
+.experience {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.947), rgba(0, 0, 0, 0.926), rgba(0, 0, 0, 0.899)),
+        url("./../../../assets/experiencebg.jpeg");
+    .experienceCover {
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 180px;
+        .experienceAll {
+            margin-top: 50px;
+            hr {
+                transform: rotate(180deg);
+                width: 9vw;
+                border: 1px solid $mainColor;
+                height: 0;
+                margin-left: -10px;
+                margin-right: 0px;
+            }
+            span {
+                margin-top: -10px;
+                margin-left: 30px;
+                .spanDiv {
+                    width: 78vw;
+                    p {
+                        font-size: 14px;
+                        margin: 10px 0 10px 0;
+                        font-family: "M PLUS 1p", sans-serif;
+                        color: #b1b0b0;
+                        padding-right: 6vw;
+                    }
+
+                    h1 {
+                        font-size: 26px;
+                        font-family: "M PLUS 1p", sans-serif;
+                        margin: 0px 0px 3px 0px;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

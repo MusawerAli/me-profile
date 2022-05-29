@@ -1,0 +1,139 @@
+$mainColor:#17ca94;
+
+.skill {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.947), rgba(0, 0, 0, 0.947), rgba(0, 0, 0, 0.933)),
+        url("./../../../assets/skillbg.jpg");
+
+    .allSkillsContent {
+        padding-bottom: 70px;
+        padding-top: 50px;
+
+        .innerContent {
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            .skillSection {
+                margin-top: 30px;
+            }
+            hr {
+                transform: rotate(180deg);
+                width: 9vw;
+                border: 1px solid $mainColor;
+                height: 0;
+                margin-left: -10px;
+                margin-right: 0px;
+            }
+            span {
+                margin-top: -10px;
+                margin-left: 30px;
+                .spanDiv {
+                    width: 78vw;
+                    margin-top: -5px;
+                    p {
+                        font-size: 14px;
+
+                        font-family: "Poppins", sans-serif;
+                    }
+                    .skills {
+                        margin-top: 10px;
+                        div {
+                            margin: 10px;
+                            p {
+                                font-size: 12px;
+                                font-family: "Poppins", sans-serif;
+                            }
+                            mat-card {
+                                height: 50px;
+                                width: 50px;
+                                background-color: transparent;
+                                background-size: cover;
+                                background-position: center;
+                            }
+                            .card1 {
+                                background-image: url("./../../../assets/angular.png");
+                            }
+                            .cardrec{
+                                background-image: url("./../../../assets/react1.png");
+                            }
+                            .cardion{
+                                background-image: url("./../../../assets/ionic.png");
+                            }
+                            .card2 {
+                              // width: 10em;
+                              // height: auto;
+                                background-image: url("./../../../assets/laravel.png");
+                            }
+                            .card3 {
+                                background-image: url("./../../../assets/scss.png");
+                            }
+                            .card4 {
+                                background-image: url("./../../../assets/html5.png");
+                            }
+                            .card5 {
+                                background-image: url("./../../../assets/django.png");
+                            }
+                            .card6 {
+                                background-image: url("./../../../assets/bootstrap.png");
+                            }
+                            .card7 {
+                                background-image: url("./../../../assets/mdb.png");
+                            }
+                            .card8 {
+                                background-image: url("./../../../assets/css3.png");
+                            }
+                            .card9 {
+                                background-image: url("./../../../assets/node.png");
+                            }
+                            .card10 {
+                                background-image: url("./../../../assets/ts.png");
+                            }
+                            .card11 {
+                                background-image: url("./../../../assets/js.png");
+                            }
+                            .card12 {
+                                background-image: url("./../../../assets/mongodb.png");
+                            }
+                            .card13 {
+                                background-image: url("./../../../assets/mysql.png");
+                            }
+                            .psql {
+                                background-image: url("./../../../assets/psql.png");
+                            }
+                            .gcp {
+                                background-image: url("./../../../assets/gcp.png");
+                            }
+                            .aws {
+                              background-image: url("./../../../assets/aws.png");
+                          }
+                            .card15 {
+                                background-image: url("./../../../assets/agile.png");
+                            }
+                            .card16 {
+                                background-image: url("./../../../assets/heroku.webp");
+                            }
+                            .card17 {
+                                background-image: url("./../../../assets/git.png");
+                            }
+                            .card18 {
+                                background-image: url("./../../../assets/bitbucket.webp");
+                            }
+                            .card19 {
+                                background-image: url("./../../../assets/vs-code.png");
+                            }
+                            .card20 {
+                                background-image: url("./../../../assets/intelij.webp");
+                            }
+                            .card21 {
+                                background-image: url("./../../../assets/photoshop.webp");
+                            }
+                            .card22 {
+                                background-image: url("./../../../assets/illustrator.png");
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

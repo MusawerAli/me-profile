@@ -1,0 +1,197 @@
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1{
+  color: white;
+}
+p{
+  color: white;
+}
+.main{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+    box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration $duration/3;
+    position: relative;
+
+    &::before,
+    &::after {
+      border: 0 solid transparent;
+      box-sizing: border-box;
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      width: 0; height: 0;
+
+      #{$vertical}: 0;
+      #{$horizontal}: 0;
+    }
+
+    &::before {
+      $h-side: if($horizontal == 'left', 'right', 'left');
+
+      border-#{$vertical}-width: $width;
+      border-#{$h-side}-width: $width;
+    }
+
+    &::after {
+      $v-side: if($vertical == 'top', 'bottom', 'top');
+
+      border-#{$v-side}-width: $width;
+      border-#{$horizontal}-width: $width;
+    }
+
+    &:hover {
+      color: $hover;
+
+      &::before,
+      &::after {
+        border-color: $hover;
+        transition: border-color 0s, width $duration, height $duration;
+        width: 100%;
+        height: 100%;
+      }
+
+      &::before { transition-delay: 0s, 0s, $duration; }
+
+      &::after { transition-delay: 0s, $duration, 0s; }
+    }
+  }
+
+  .draw-border {
+    @include btn-border-drawing(#ffffff,  #17ca94, 2px, bottom, right);
+  }
+  .draw-border1 {
+    @include btn-border-drawing(#ffffff00,  #17ca94, 2px, bottom, right);
+  }
+
+  //=== Button styling, semi-ignore
+  .btn {
+      margin-top: 50px;
+      width: fit-content;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+   font-size: 13px;
+   outline: none;
+   font-family: 'Poppins', sans-serif;
+   padding: 15px 20px 15px 20px;
+   a{
+     text-decoration: none;
+     color: white;
+   }
+  //  box-shadow: 0 5px 5px -3px #17ca94, 0 8px 10px 1px #17ca94, 0 3px 14px 2px #17ca94;
+
+  }
+
+
+
+
+
+
+  .container1 {
+    width: 100%;
+    display: flex;
+    height: 1px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #17ca94;
+    animation: colorchange 4s;
+    animation-iteration-count:infinite;
+  }
+
+  .line {
+    flex: 1;
+
+  }
+
+  .text {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+     color: #17ca99;
+    background-color: #0a0a0a;
+    border: 1px solid #17ca94;
+    animation: colorchange1 4s;
+    animation-iteration-count:infinite;
+
+  }
+
+  @keyframes colorchange
+  {
+    0%   {background-color: #44b697;
+   }
+    25%   {background-color: #44b697;
+     }
+    50%   {background-color: #060606;
+   }
+    75% {background-color: #44b697;
+    }
+    100% {background-color: #32967b;
+   }
+  }
+  @keyframes colorchange1
+  {
+    0%   { border: 1px solid #44b697;
+  }
+    25%   { border: 1px solid #ad7d0d;
+    }
+    50%   { border: 1px solid #060606;
+   }
+    75% { border: 1px solid #ad7d0d;
+   }
+    100% { border: 1px solid #44b697;
+    }
+  }
+
+
+
+
+  /* You can add global styles to this file, and also import other style files */
+@import './assets/animate.css';
+
+.animated-delay-1 {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+
+.animated-delay-2 {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
+
+.mat-drawer-inner-container{
+  display: flex;
+}
+
+b {
+  color: #17ca94;
+}

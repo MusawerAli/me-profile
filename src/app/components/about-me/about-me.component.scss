@@ -1,0 +1,53 @@
+$mainColor:#17ca94;
+
+.education {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.981), rgba(0, 0, 0, 0.919), rgba(0, 0, 0, 0.961)),
+        url("./../../../assets/educationbg.jpg");
+    .allEducationalContent {
+        margin: 100px 0px 50px 0px;
+        padding-bottom: 100px;
+        .educationContent {
+            margin-top: 60px;
+            hr {
+                transform: rotate(180deg);
+                width: 9vw;
+                border: 1px solid $mainColor;
+                height: 0;
+                margin: 0px 0px 0px -10px;
+            }
+            span {
+                margin: -17px 0px 0px 30px;
+                .spanDiv {
+                    width: 78vw;
+                    p {
+                        font-size: 14px;
+                        margin: 10px 0 10px 0;
+                        width: 90%;
+                    }
+                    .heading {
+                        font-family: "Great Vibes", cursive;
+                        letter-spacing: 2px;
+                        font-size: 19px;
+                        margin-right: 50px;
+                    }
+                    .educationInfo {
+                        font-family: "M PLUS 1p", sans-serif;
+                        color: #b1b0b0;
+                        width: 80vw;
+                        margin: 0px;
+                    }
+                    h1 {
+                        font-size: 23px;
+                        font-family: "M PLUS 1p", sans-serif;
+                        margin: 5px 0px 3px 0px;
+                        padding: 10px 2vw 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

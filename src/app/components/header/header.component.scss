@@ -1,0 +1,108 @@
+$mainColor:#17ca94;
+
+mat-toolbar {
+    background-color: black;
+    justify-content: flex-end;
+    border-bottom: 2px solid $mainColor;
+    position: sticky;
+    position: -webkit-sticky;
+    .yellowLogo {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        margin-right: 17px;
+    }
+}
+mat-sidenav-container {
+    mat-sidenav-content {
+        overflow-x: hidden;
+    }
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    .sidenav {
+        background-image: linear-gradient(to right, $mainColor 50%, black 50%);
+        border-right: 2px solid $mainColor;
+        .yellowSidenav {
+            align-items: center;
+            width: 80px;
+            justify-content: space-between;
+            img {
+                cursor: pointer;
+                height: 40px;
+                width: 40px;
+                margin-top: 40px;
+            }
+
+            .icons {
+               position: absolute;
+               bottom: 0;
+                align-items: center;
+                div {
+                    margin-top: 10px;
+                    height: 40px;
+                    align-items: center;
+                    width: 40px;
+                    border: 2px solid black;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 50px;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+                // align-items: center;
+                hr {
+                    width: 15px;
+                    border: 1px solid black;
+                    transform: rotate(90deg);
+                    margin-top: 20px;
+                }
+                a {
+                    text-decoration: none;
+                }
+                i {
+                    padding: 10px;
+                    color: black;
+                    cursor: pointer;
+                    font-size: 18px;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .blackSidenav {
+            width: 80px;
+            height: 92vh;
+            justify-content: space-around !important;
+            a {
+                transform: rotate(270deg);
+                padding: 6px 20px 6px 20px;
+                margin-bottom: 25px;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                color: $mainColor;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 968px) {
+    .sidenav {
+        margin-left: -80px;
+    }
+    .mat-drawer-content {
+        margin-left: 80px !important;
+    }
+}
+.mat-drawer-content {
+    color: transparent;
+}
+@media (max-width: 600px) {
+    .mat-drawer-content {
+        margin-left: 0px !important;
+    }
+}

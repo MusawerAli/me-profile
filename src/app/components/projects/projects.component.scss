@@ -1,0 +1,57 @@
+$mainColor:#17ca94;
+
+.projects {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.926)), url("./../../../assets/projectbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+  .coverCards {
+    flex: none;
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    .cards {
+      justify-content: space-around;
+      div {
+        justify-content: center;
+        text-align: center;
+        mat-card {
+          height: 150px;
+          width: 150px;
+          background-size: cover;
+          border: 2px solid $mainColor;
+          cursor: pointer;
+          margin: 50px 10px 0px 0px;
+          box-shadow: 0 5px 5px -3px rgba(92, 92, 92, 0.288), 0 8px 10px 1px rgba(96, 95, 95, 0.342),
+            0 3px 14px 2px rgba(109, 109, 109, 0.336) !important;
+        }
+        .card1 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.651)), url("./../../../assets/ht.png");
+        }
+        .card2 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.397)), url("./../../../assets/mp.png");
+        }
+        .card3 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.397)), url("./../../../assets/sp.png");
+        }
+        .card4 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.397)),
+            url("/assets/todo.png");
+        }
+        .card5 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.397)), url("./../../../assets/fo.png");
+        }
+        .card6 {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.397)), url("https://i1.wp.com/worldscholarshipforum.com/wealth/wp-content/uploads/2021/08/hmUBbC2DgdjP7P4foqWlAyhfCpsgQquljfeZrSIL-scaled.jpeg?fit=2560%2C1707&ssl=1");
+        }
+        p {
+          color: $mainColor;
+          font-size: 14px;
+          margin: 25px 0px 15px 0px;
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+  }
+}

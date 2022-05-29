@@ -1,0 +1,53 @@
+<mat-toolbar fxShow="true" fxHide.gt-xs="true">
+    <img (click)="toAbout()" class="yellowLogo" src="assets/nky.png" alt="logo">
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+
+    <mat-sidenav [@slideIn] class="sidenav" fxLayout="row" #left position="start" mode="side" opened fxShow="true" fxHide.lt-sm="true">
+        <div class="yellowSidenav" fxLayout='column'>
+            <img (click)="toAbout()" src="assets/nkb.png" alt="logo" >
+            <div class="icons hide-on-init animated-delay-1" fxLayout='column' animateOnScroll animationName="animated fadeInUp">
+                <div fxLayoutAlign='center center'>
+                 <a href="https://www.linkedin.com/in/nimra2212/" target="blank">  <i class="fa fa-linkedin"></i></a>
+                </div>
+                <div fxLayoutAlign='center center'>
+                 <a href="https://github.com/Nimra2212" target="blank"> <i class="fa fa-github-square"></i></a>
+                </div>
+                <div fxLayoutAlign='center center'>
+                <a href="https://stackoverflow.com/users/15035397/nimra-khan?" target="blank"><i class="fa fa-stack-overflow"></i></a>
+                </div>
+                <div fxLayoutAlign='center center'>
+               <a href="https://dribbble.com/Nimra_Khan" target="blank"><i class="fa fa-dribbble"></i></a>
+                </div>
+                <div fxLayoutAlign='center center'>
+               <a href="https://medium.com/@nimrakhan2212" target="blank"><i class="fa fa-medium"></i></a>
+                </div>
+                <div fxLayoutAlign='center center'>
+               <a > <i class="fa fa-instagram"></i></a>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+        <div class="blackSidenav hide-on-init " fxLayout='column' fxLayoutAlign="center center" animateOnScroll
+            animationName="animated fadeInLeft">
+            <a class="btn draw-border1" (click)="toAbout()">About</a>
+            <a class="btn draw-border1" (click)="toEducation()">Education</a>
+            <a class="btn draw-border1" (click)="toTest()">Skills</a>
+            <a class="btn draw-border1" (click)="toExperience()">Experience</a>
+            <a class="btn draw-border1" (click)="toProjects()">Projects</a>
+
+        </div>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+        <app-home-page id="homepage"></app-home-page>
+        <app-about-me id="education"></app-about-me>
+        <app-skills id="skills"></app-skills>
+        <app-experience id="experience"></app-experience>
+        <app-projects id="projects"></app-projects>
+        <app-testimonial id="testimonial"></app-testimonial>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
